@@ -1,0 +1,258 @@
+<section>
+    <h2>My projects</h2>
+
+    <div class="container visible">
+        <div class="links">
+            @for(link of tabLinks; track $index){
+            <a tabindex="0" [attr.aria-label]="'link to ' + link.label" [ngClass]="{'active': activeAt == $index}"
+                (click)="onLinkClick($index)">
+                <span class="text">{{link.label}}</span>
+            </a>
+            }
+        </div>
+
+        <div #content class="content-wrapper">
+            <span class="footnote">*all projects are available on my github</span>
+            <article appVisibility>
+                <img *appLazyImage="'/assets/ToDoApp-min.jpg'" src="/assets/ToDoApp.gif" loading="lazy" />
+                <div class="content">
+                    <h3>ToDo App</h3>
+                    <p>
+                        The Sticky Notes Todo app is a web application I developed this using Angular to help users
+                        organize tasks visually. Users can create, edit, and delete sticky notes, with features like
+                        drag-and-drop and layering for prioritization.<br /><br />
+
+                        I crafted a dynamic and responsive frontend that makes adding, editing and
+                        organizing notes a breeze. The app leverages Angular's powerful features to keep everything
+                        running smoothly and efficiently. Styling the app with SCSS allowed me to add a nice visual
+                        style and keep the interface clean and modern.<br /><br />
+
+                        TypeScript was my choice for adding type safety and making the codebase reliable and
+                        maintainable. This made it easier to find bugs and made the development process much more
+                        enjoyable.<br /><br />
+
+                        This project is a great example of how Angular can be used to create a practical, everyday tool.
+                        It's all about combining functionality with a little fun and style. Give it a try and see how it
+                        can help you manage your tasks!
+                    </p>
+                    <ul class="techs">
+                        <li>Angular</li>
+                        <li>TypeScript</li>
+                        <li>SCSS</li>
+                        <li>HTML</li>
+                    </ul>
+                </div>
+            </article>
+            <article appVisibility>
+                <img *appLazyImage="'/assets/3DMarketplace-min.jpg'" src="/assets/3DMarketplace.gif" loading="lazy" />
+                <div class="content">
+                    <h3>3D marketplace</h3>
+                    <p>
+                        Welcome to my latest development, a dynamic 3D marketplace application that reimagines the way
+                        users interact with digital assets. This project is built using a robust technology stack that
+                        includes Angular and TypeScript at its core, leveraging the full set of features these
+                        frameworks offer for seamless development.<br /><br />
+
+                        I integrated Material UI and TailwindCSS to create an elegant and responsive UI, ensuring that
+                        the visuals are as captivating as the 3D models themselves. Speaking of 3D, I used ThreeJS to
+                        create an immersive, interactive dimension in the marketplace, allowing users to explore
+                        products in a truly immersive way.<br /><br />
+
+                        On the backend, NestJS and TypeORM provide a solid foundation, while SQL Server takes care of
+                        the database needs. Authentication is secure, keeping user data safe, and payment processing is
+                        a breeze thanks to Stripe integration. To make the application scalable and efficient, Azure
+                        blob storage is used to handle all media assets.<br /><br />
+
+                        I didn't stop there. The app has advanced filtering options that allow users to easily find
+                        exactly what they are looking for. To keep things running smoothly, RxJS is used to manage
+                        asynchronous data streams.<br /><br />
+
+                        This project demonstrates my ability to combine different technologies to create a functional,
+                        user-friendly application that is both visually impressive and technically sound. Check out the
+                        program and experience the future of 3D markets!
+                    </p>
+                    <ul class="techs">
+                        <li>Angular</li>
+                        <li>TypeScript</li>
+                        <li>Material UI</li>
+                        <li>ThreeJS</li>
+                        <li>TailwindCSS</li>
+                        <li>NestJS</li>
+                        <li>TypeORM</li>
+                        <li>RxJS</li>
+                        <li>SQL Server</li>
+                        <li>Azure</li>
+                        <li>Stripe</li>
+                    </ul>
+                </div>
+            </article>
+            <article appVisibility>
+                <img *appLazyImage="'/assets/ExpenseTracker-min.jpg'" src="/assets/ExpenseTracker.gif" loading="lazy" />
+                <div class="content">
+                    <h3>Expense Tracker</h3>
+                    <p>
+                        Welcome to my simple expense tracker! I built this great tool using React, Bootstrap and
+                        TypeScript to keep your finances in order. The idea was to create an easy-to-use interface where
+                        you can easily track your expenses and manage your budget.<br /><br />
+
+                        React provides the interface, making the application dynamic and responsive. I've used Bootstrap
+                        for styling, which makes sure everything looks crisp and works well across devices. The layout
+                        is simple and intuitive, making it easy to add, edit and view your expenses.<br /><br />
+
+                        TypeScript was an important part of the development process, adding type safety and increasing
+                        code reliability. This helped me catch bugs early and made the program more reliable
+                        overall.<br /><br />
+
+                        This project highlights my ability to create practical applications that are both functional and
+                        user-friendly. It combines the core features of React with the elegant design of Bootstrap and
+                        the reliability of TypeScript. Dive in and see how easy managing your expenses can be!
+                    </p>
+                    <ul class="techs">
+                        <li>React</li>
+                        <li>TypeScript</li>
+                        <li>Bootstrap</li>
+                    </ul>
+                </div>
+            </article>
+            <article appVisibility>
+                <img *appLazyImage="'/assets/FoodApp-min.jpg'" src="/assets/FoodApp.gif" loading="lazy" />
+                <div class="content">
+                    <h3>Food App</h3>
+                    <p>
+                        Introducing my simple food ordering app built with Angular and TypeScript! This app was designed
+                        to make ordering your favorite dishes an easy experience.<br /><br />
+
+                        Using Angular, I developed a smooth and responsive interface that makes menu navigation and
+                        ordering a real pleasure. The interface is intuitive, allowing you to browse dishes, add them to
+                        your cart and check out without any worries.<br /><br />
+
+                        TypeScript played a big role in this project, ensuring type safety and making the code more
+                        maintainable and error-free. This ensured that the application worked reliably and efficiently,
+                        improving the overall user experience.<br /><br />
+
+                        This project demonstrates how Angular can be used to build a practical, real-world application
+                        with a focus on user interaction and functionality. Take a look and see how easy it is to order
+                        food!
+                    </p>
+                    <ul class="techs">
+                        <li>Angular</li>
+                        <li>TypeScript</li>
+                        <li>CSS</li>
+                        <li>HTML</li>
+                    </ul>
+                </div>
+            </article>
+            <article appVisibility>
+                <img *appLazyImage="'/assets/ChatApp-min.jpg'" src="/assets/ChatApp.jpg" loading="lazy" />
+                <div class="content">
+                    <h3>Chat App</h3>
+                    <p>
+                        Welcome to my chat app project! It's a nice little app that I put together using a bunch of cool
+                        technologies: React, Node, Express, Socket.io, and TypeScript. The idea was to create a simple
+                        and flawless communication experience.<br /><br />
+
+                        On the front end, I used React to create an intuitive and responsive user interface. It's clean,
+                        easy to navigate and great to use. On the back end, I used Express running on Node.js, which
+                        made setting up the server logic a breeze. The magic of real-time communication happens thanks
+                        to Socket.io, thanks to which the chat is instantly updated.<br /><br />
+
+                        I also added TypeScript to the mix to add type safety and improve code maintainability. It was a
+                        bit of a learning curve, but worth it for the added reliability and readability.
+                        <br /><br />
+
+                        Overall, this project demonstrates my ability to build a full-stack application with a focus on
+                        real-time functionality, combining modern front-end techniques with a solid back-end
+                        infrastructure. Try it and see how smoothly it works!
+                    </p>
+                    <ul class="techs">
+                        <li>React</li>
+                        <li>Socket.io</li>
+                        <li>Express</li>
+                        <li>Node</li>
+                        <li>TypeScript</li>
+                        <li>CSS</li>
+                    </ul>
+                </div>
+            </article>
+            <article appVisibility>
+                <img *appLazyImage="'/assets/LibraryApp-min.jpg'" src="/assets/LibraryApp.jpg" loading="lazy" />
+                <div class="content">
+                    <h3>Library App</h3>
+                    <p>
+                        Welcome to my library application built using the powerful ASP.NET core! This project created a
+                        seamless and efficient way to manage your book collection, and it turned out to be pretty
+                        awesome.<br /><br />
+
+                        The basis of the application is ASP.NET Core, which I used to create a reliable and scalable
+                        backend. With C# and DapperORM, data access is super fast and efficient, making interacting with
+                        a SQL Server database simple. I used the MVC pattern to keep everything organized and
+                        maintainable, which really helped streamline the development process.<br /><br />
+
+                        On the front end, Bootstrap brings a clean and responsive design to the table. The user
+                        interface is simple and intuitive, allowing users to browse the library, add new books, update
+                        information and keep everything well organized.<br /><br />
+
+                        This project highlights my skills in building full-featured applications using ASP.NET Core and
+                        demonstrates how to use modern web development technologies to create practical and
+                        user-friendly solutions. Dive in and learn how library management can be efficient and fun!
+                    </p>
+                    <ul class="techs">
+                        <li>ASP.NET 5+</li>
+                        <li>C#</li>
+                        <li>DapperORM</li>
+                        <li>Bootstrap</li>
+                        <li>MVC</li>
+                        <li>SQL Server</li>
+                        <li>HTML</li>
+                    </ul>
+                </div>
+            </article>
+            <article appVisibility>
+                <img *appLazyImage="'/assets/CafeApp-min.jpg'" src="/assets/CafeApp.jpg" loading="lazy" />
+                <div class="content">
+                    <h3>Cafe App</h3>
+                    <p>
+                        Check out my cafe app API built with ASP.NET Core! This project was a fun way to dive into
+                        creating a seamless experience for coffee lovers to browse and order their favorite
+                        varieties.<br /><br />
+
+                        I used ASP.NET Core to build a robust and efficient backend, using the power of C# to keep
+                        everything running smoothly. With DapperORM, data access is fast and easy, making interacting
+                        with a SQL Server database fast and reliable.<br /><br />
+
+                        The app allows users to explore menus, customize orders, and even save favorite drinks for quick
+                        access next time. The goal was to create an intuitive and enjoyable user experience, and I think
+                        it worked out pretty well.<br /><br />
+
+                        This project demonstrates my ability to develop full-stack applications using ASP.NET Core,
+                        combining powerful back-end functionality with a user-friendly interface. Dive in and see how
+                        easy it is to make coffee with just a few clicks!
+                    </p>
+                    <ul class="techs">
+                        <li>ASP.NET 5+</li>
+                        <li>C#</li>
+                        <li>DapperORM</li>
+                        <li>SQL Server</li>
+                    </ul>
+                </div>
+            </article>
+            <article appVisibility>
+                <img *appLazyImage="'/assets/Terrain-min.jpg'" src="/assets/Terrain.gif" loading="lazy" />
+                <div class="content">
+                    <h3>Terrain Generation</h3>
+                    <p>
+                        For this project, I dived into creating a cool procedural terrain using p5.js and JavaScript. I
+                        used noise features to create realistic landscapes and then added a touch of nature using
+                        recursive tree algorithms. It's like creating a miniature world from scratch, where every tree
+                        and hill is unique. This project was a fun way to explore creative coding and algorithms while
+                        creating something visually appealing.
+                    </p>
+                    <ul class="techs">
+                        <li>p5.js</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>

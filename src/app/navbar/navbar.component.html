@@ -1,0 +1,7 @@
+<header>
+    <nav>
+        @for (link of links; track $index) {
+        <a [href]="link.href" class="nav-link" [ngClass]="{'active': activeLink == link.id}">{{ link.label }}</a>
+        }
+    </nav>
+</header>

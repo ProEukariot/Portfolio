@@ -1,0 +1,18 @@
+<div id="nav-anchor" appIntersection (intersect)="hideNav($event)" rootMargin="50px" [threshold]="0"></div>
+<app-navbar #navbar [ngClass]="{'hidden': !navVisible}"></app-navbar>
+
+<app-hero id="hero" appIntersection (intersect)="updateActiveLink('hero', $event)" rootMargin="-75% 0% -25% 0%"
+    class="scroll-offset"></app-hero>
+
+<app-projects id="projects" appIntersection (intersect)="updateActiveLink('projects', $event)"
+    rootMargin="-75% 0% -25% 0%" class="scroll-offset"></app-projects>
+
+<app-experience id="experience" appIntersection (intersect)="updateActiveLink('experience', $event)"
+    rootMargin="-75% 0% -25% 0%" class="scroll-offset"></app-experience>
+
+<app-contact id="contact" appIntersection (intersect)="updateActiveLink('contact', $event)" rootMargin="-75% 0% -25% 0%"
+    class="scroll-offset"></app-contact>
+
+<app-footer></app-footer>
+
+<!-- <div class="active-link-container" #switchLinkRef></div> -->

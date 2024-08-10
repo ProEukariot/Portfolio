@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Open+Sans:wght@500&display=swap');
+
+// color vars
+$background-primary-color: #FBE9D0;
+$primary-color: #244855;
+$secondary-color: #90AEAD;
+$accent-color: #874F41;
+$highlight-color: #E64833;
+
+
+// font vars
+$font-size-base: 14px;
+
+$font-sans: 'Open Sans', sans-serif;
+$font-mono: 'Inconsolata', monospace;
+
+// media breakpoints
+
+$laptop-breakpoint: 1024px;
+$tablet-breakpoint: 800px;
+$mobile-breakpoint: 460px;

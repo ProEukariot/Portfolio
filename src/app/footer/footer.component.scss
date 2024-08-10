@@ -1,0 +1,23 @@
+@import 'variables';
+
+footer {
+    display: flex;
+    justify-content: center;
+    color: $background-primary-color;
+    background-color: $primary-color;
+    border-top: 2px solid $background-primary-color;
+
+    .container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 1rem;
+        width: 100%;
+        max-width: 1200px;
+        padding: 2rem;
+
+        span {
+            margin: 0 2rem;
+        }
+    }
+}

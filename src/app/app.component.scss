@@ -1,0 +1,14 @@
+@import 'variables';
+
+.scroll-offset {
+    scroll-margin-top: 160px;
+
+    @media (min-width: $tablet-breakpoint) {
+        scroll-margin-top: 102px;
+    }
+}
+
+#this.navbar.nativeElement {
+    position: absolute;
+    top: 0;
+}

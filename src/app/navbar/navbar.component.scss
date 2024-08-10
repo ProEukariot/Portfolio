@@ -1,0 +1,62 @@
+@import "variables";
+
+:host {
+    &.hidden {
+        header {
+            transform: translate(0, -100%);
+        }
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        font-size: 1.5rem;
+        padding: 1rem;
+        z-index: 100;
+        transition: transform 250ms ease-out;
+
+
+        nav {
+            $link-size: minmax(100px, 200px);
+
+            flex: 1 1 100%;
+            display: grid;
+            grid-template-columns: repeat(2, $link-size);
+            background-color: $background-primary-color;
+            gap: 1rem;
+            justify-content: center;
+            border: 2px solid $primary-color;
+            border-radius: 1rem;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            padding: 1rem;
+
+            @media (min-width: $tablet-breakpoint) {
+                max-width: $laptop-breakpoint;
+                grid-template-columns: repeat(4, $link-size);
+            }
+
+            .nav-link {
+                display: block;
+                padding: 0.5rem 1rem;
+                border-radius: 1rem;
+                text-align: center;
+                white-space: nowrap;
+                transition: background-color 250ms ease-out,
+                    color 250ms ease-out;
+
+                &.active {
+                    color: $background-primary-color;
+                    background-color: $primary-color;
+                }
+
+                &:focus {
+                    outline: 1px solid $primary-color;
+                }
+            }
+        }
+    }
+}
