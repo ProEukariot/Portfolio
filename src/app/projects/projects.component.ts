@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { AfterViewInit, Component, ElementRef, HostListener, OnDestroy, OnInit, QueryList, Renderer2, SimpleChanges, ViewChild, ViewChildren } from '@angular/core';
 import { VisibilityDirective } from '../directives/visibility.directive';
 import { LazyImageDirective } from '../directives/lazy-image.directive';
@@ -8,7 +8,7 @@ export type TabLink = { label: string };
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [CommonModule, VisibilityDirective, LazyImageDirective],
+  imports: [CommonModule, VisibilityDirective, LazyImageDirective, NgOptimizedImage],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss'
 })
